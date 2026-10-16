@@ -1,0 +1,38 @@
+{
+  "name": "opencode-session-folder-permissions",
+  "version": "0.1.0",
+  "description": "Temporary external-folder approvals for OpenCode sessions, scoped to one terminal and one conversation.",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lemnos-Foundry/oc-file-permisison.git"
+  },
+  "homepage": "https://github.com/Lemnos-Foundry/oc-file-permisison#readme",
+  "bugs": {
+    "url": "https://github.com/Lemnos-Foundry/oc-file-permisison/issues"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./tui": "./tui.js",
+    "./rpc": "./rpc.js"
+  },
+  "files": [
+    "index.js",
+    "tui.js",
+    "rpc.js",
+    "src"
+  ],
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "permissions",
+    "plugin"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "@opencode/plugin": "2.0.21"
+  }
+}
